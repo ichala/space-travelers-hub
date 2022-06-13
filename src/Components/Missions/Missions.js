@@ -1,7 +1,9 @@
 import React from 'react';
+// import { useSelector } from 'react-redux';
 import './missons.css';
 
 function Missions() {
+//   const missions = useSelector((state) => state.missions);
   return (
     <>
       <div className="table-container">
