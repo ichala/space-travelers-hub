@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../images/logo.png';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
@@ -9,12 +10,12 @@ function Header() {
         <h4>Title</h4>
       </div>
       <div className="links">
-        <a className="link" href="/"> Missions</a>
-        <a className="link" href="/"> Dragons</a>
-        <a className="link" href="/"> Rockets</a>
+        <NavLink className="link" to="/"> Missions</NavLink>
+        <NavLink  className="link" to="/Dragons"> Dragons</NavLink>
+        <NavLink  className="link" to="/Rockets"> Rockets</NavLink>
         {' '}
         |
-        <a className="link" href="/"> Profile</a>
+        <NavLink  className="link" to="/Profile"> Profile</NavLink>
       </div>
     </nav>
   );
