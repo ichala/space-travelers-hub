@@ -3,6 +3,7 @@ import {
   Route,
 } from 'react-router-dom';
 import Header from './Components/Header/Header';
+import Missions from './Components/Missions/Missions';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <hr />
       <div className="content">
         <Routes>
-          <Route path="/" element={<>Missions</>} />
+          <Route path="/" element={<Missions />} />
           <Route path="/Dragons" element={<>Dragons</>} />
           <Route path="/Rockets" element={<>Rockets</>} />
           <Route path="/Profile" element={<>Profile</>} />
