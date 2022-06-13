@@ -19,7 +19,7 @@ function Card() {
               including versions of Lorem Ipsum.`}
 
           </div>
-          <div><button className="btnReserveRocket" type="button">Reserve Rocket</button></div>
+          <div className="buttonDiv"><button className="btnReserveRocket" type="button">Reserve Rocket</button></div>
 
         </div>
       </div>
