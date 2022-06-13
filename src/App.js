@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 import Header from './Components/Header/Header';
 import Missions from './Components/Missions/Missions';
 import { FetchMessions, SetMissions } from './Redux/Missions/Missions';
-import Rocket from './Components/Rocket/Rocket';
+import Rocket from './Components/Rockets/Rocket';
 
 function App() {
   const dispatch = useDispatch();
