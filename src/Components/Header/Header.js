@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../../images/logo.png';
 import { NavLink } from 'react-router-dom';
+import logo from '../../images/logo.png';
 
 function Header() {
   return (
@@ -11,11 +11,11 @@ function Header() {
       </div>
       <div className="links">
         <NavLink className="link" to="/"> Missions</NavLink>
-        <NavLink  className="link" to="/Dragons"> Dragons</NavLink>
-        <NavLink  className="link" to="/Rockets"> Rockets</NavLink>
+        <NavLink className="link" to="/Dragons"> Dragons</NavLink>
+        <NavLink className="link" to="/Rockets"> Rockets</NavLink>
         {' '}
         |
-        <NavLink  className="link" to="/Profile"> Profile</NavLink>
+        <NavLink className="link" to="/Profile"> Profile</NavLink>
       </div>
     </nav>
   );
