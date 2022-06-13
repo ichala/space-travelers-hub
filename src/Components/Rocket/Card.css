@@ -1,0 +1,36 @@
+.card-main {
+    width: 88%;
+    padding: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+}
+
+.image {
+    width: 15rem;
+    border: 2px solid black;
+}
+
+.body {
+    flex: 30rem;
+    border: 2px solid black;
+}
+
+.title {
+    padding-bottom: 1rem;
+}
+
+.text {
+    padding-bottom: 1rem;
+    word-spacing: 0.1rem;
+}
+
+.btnReserveRocket {
+    padding: 1rem;
+}
