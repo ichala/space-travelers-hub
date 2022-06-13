@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import Header from './Components/Header/Header';
 import Missions from './Components/Missions/Missions';
 import { FetchMessions, SetMissions } from './Redux/Missions/Missions';
+import Rocket from './Components/Rocket/Rocket';
 
 function App() {
   const dispatch = useDispatch();
@@ -25,7 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Missions />} />
           <Route path="/Dragons" element={<>Dragons</>} />
-          <Route path="/Rockets" element={<>Rockets</>} />
+          <Route path="/Rockets" element={<Rocket />} />
           <Route path="/Profile" element={<>Profile</>} />
         </Routes>
       </div>
