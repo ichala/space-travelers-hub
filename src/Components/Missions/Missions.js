@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { JoinMission } from '../../Redux/Missions/Missions';
+import { JoinMission, LeaveMission } from '../../Redux/Missions/Missions';
 import './missons.css';
 
 function Missions() {
@@ -30,7 +30,7 @@ function Missions() {
                     <kbd className="joined_mission">Active Member</kbd>
                   </td>
                   <td className="table-action">
-                    {mission.reserved ? (<button className="leave_mission" type="button">Leave Mission</button>) : (<button onClick={() => dispatch(JoinMission(mission.id))} className="join_mission" type="button">Join Mission</button>)}
+                    {mission.reserved ? (<button onClick={() => dispatch(LeaveMission(mission.id))} className="leave_mission" type="button">Leave Mission</button>) : (<button onClick={() => dispatch(JoinMission(mission.id))} className="join_mission" type="button">Join Mission</button>)}
 
                   </td>
                 </tr>
