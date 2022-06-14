@@ -1,15 +1,10 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import { generate } from 'randomized-string';
-import { fetchDragon } from '../../Redux/Dragon/dragon';
 import './dragon.css';
 
 const DragonPage = () => {
-  const dispatch = useDispatch();
   const dragonDetail = useSelector((state) => state.dragonReducer);
-  useEffect(() => {
-    dispatch(fetchDragon());
-  }, []);
   return (
     <div>
       {dragonDetail.map((dragonDetail) => (
