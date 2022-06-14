@@ -27,7 +27,7 @@ function Missions() {
                     {mission.description}
                   </td>
                   <td className="table-status">
-                    <kbd className="joined_mission">Active Member</kbd>
+                    {mission.reserved ? (<kbd className="joined_mission">Active Member</kbd>) : (<kbd className="not_joined_mission">Not A Member</kbd>)}
                   </td>
                   <td className="table-action">
                     {mission.reserved ? (<button onClick={() => dispatch(LeaveMission(mission.id))} className="leave_mission" type="button">Leave Mission</button>) : (<button onClick={() => dispatch(JoinMission(mission.id))} className="join_mission" type="button">Join Mission</button>)}
