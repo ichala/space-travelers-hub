@@ -1,5 +1,6 @@
 const GET = 'GET_MISSIONS';
 const JOIN = 'JOIN_MISSION';
+const LEAVE = 'LEAVE_MISSION';
 const MissionAPI = 'https://api.spacexdata.com/v3/missions';
 let newState = [];
 // Api Calls
@@ -29,7 +30,14 @@ export default function reducerMissions(state = [], action = {}) {
         return { ...mission, reserved: true };
       });
       return newState;
-    default: return state;
+    case LEAVE:
+      newState = state.map((mission) => {
+        if (mission.id !== action.payload) return mission;
+        return { ...mission, reserved: false };
+      });
+      return newState;
+    default:
+      return state;
   }
 }
 
@@ -40,6 +48,10 @@ export function SetMissions(missions) {
 
 export function JoinMission(id) {
   return { type: JOIN, payload: id };
+}
+
+export function LeaveMission(id) {
+  return { type: LEAVE, payload: id };
 }
 
 export const MissionList = (state) => state.missions;
