@@ -7,4 +7,24 @@
   display: flex;
   margin: 30px auto 0 auto;
   width: 80%;
+  flex-direction: row-reverse;
+}
+
+.dragonContent {
+  height: 200px;
+  overflow-y: auto;
+  margin-left: 20px;
+}
+
+.dragon img {
+  width: 230px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.dragonPage button {
+  margin-top: 20px;
+  padding: 8px 5px;
+  border-radius: 5px;
+  text-transform: capitalize;
 }

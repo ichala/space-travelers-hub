@@ -11,7 +11,7 @@ const DragonPage = () => {
         <div key={dragonDetail.id} className="dragonPage">
           <h3>{dragonDetail.name}</h3>
           <p>{dragonDetail.type}</p>
-          <div>
+          <div className="dragon">
             {dragonDetail.flickr_images.map((images) => (<img alt="dragonImg" key={generate()} src={images} />))}
             <button type="button">reserve dragon</button>
             <button type="button">cancel reservation </button>
