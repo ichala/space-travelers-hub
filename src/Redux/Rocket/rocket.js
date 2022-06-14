@@ -30,3 +30,12 @@ export const fetchRocket = () => async (dispatch) => {
     <h2>Error</h2>;
   }
 };
+
+export default function rocketReducer(state = [], action) {
+  switch (action.type) {
+    case GET_ROCKET:
+      return action.payload;
+    default:
+      return state;
+  }
+}
