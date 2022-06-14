@@ -1,78 +1,10 @@
-table {
-  border-collapse: collapse;
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-th,
-td {
-  padding: 1.25rem;
-  border: 1px solid #ccc;
-  text-align: center;
-}
-
-.joined_mission {
-  background-color: rgb(47, 176, 0);
-  padding: 3px 9px 3px 9px;
-  border-radius: 8px;
-  color: white;
-}
-
-.not_joined_mission {
-  background-color: rgb(98, 99, 98);
-  padding: 3px 9px 3px 9px;
-  border-radius: 8px;
-  color: white;
-}
-
-.join_mission {
-  background-color: transparent;
-  color: black;
-  padding: 5px;
-  border-radius: 5px;
-  border: 2px solid black; /* Green */
-}
-
-.join_mission:hover {
-  background-color: black;
-  color: rgb(255, 255, 255);
-  padding: 5px;
-  border-radius: 5px;
-  border: 2px solid black;
-  cursor: pointer;
-}
-
-.leave_mission {
-  background-color: transparent;
-  color: rgb(223, 0, 0);
-  padding: 5px;
-  border-radius: 5px;
-  border: 2px solid rgb(227, 8, 8);
-}
-
-.leave_mission:hover {
-  background-color: rgb(223, 0, 0);
-  color: rgb(255, 255, 255);
-  padding: 5px;
-  border-radius: 5px;
-  border: 2px solid rgb(227, 8, 8);
-  cursor: pointer;
-}
-
-.table-description {
-  width: 55%;
-}
-
-.table-title,
-.table-status,
-.table-action {
-  width: 15%;
-}
-
-tbody tr:nth-child(odd) {
-  background: #eee;
-}
-
-.table-container {
-  padding: 20px;
-  margin: 40px;
+.dragonPage {
+  display: flex;
+  margin: 30px auto 0 auto;
+  width: 80%;
 }

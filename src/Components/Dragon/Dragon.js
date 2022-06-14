@@ -13,11 +13,13 @@ const DragonPage = () => {
   return (
     <div>
       {dragonDetail.map((dragonDetail) => (
-        <div key={dragonDetail.id}>
+        <div key={dragonDetail.id} className="dragonPage">
           <h3>{dragonDetail.name}</h3>
           <p>{dragonDetail.type}</p>
           <div>
             {dragonDetail.flickr_images.map((images) => (<img alt="dragonImg" key={generate()} src={images} />))}
+            <button type="button">reserve dragon</button>
+            <button type="button">cancel reservation </button>
           </div>
         </div>
       ))}
