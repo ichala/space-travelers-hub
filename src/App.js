@@ -11,6 +11,7 @@ import Rocket from './Components/Rockets/Rocket';
 import DragonPage from './Components/Dragon/Dragon';
 import { fetchDragon } from './Redux/Dragon/dragon';
 import Profile from './Components/Profile/Profile';
+import { fetchRocket } from './Redux/Rocket/rocket';
 
 function App() {
   const dispatch = useDispatch();
@@ -19,6 +20,7 @@ function App() {
       const missions = await FetchMessions();
       dispatch(SetMissions(missions));
       dispatch(fetchDragon());
+      dispatch(fetchRocket());
     }
     intitData();
   }, []);

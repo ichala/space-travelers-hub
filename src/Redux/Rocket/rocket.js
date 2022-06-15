@@ -15,12 +15,12 @@ export const fetchRocket = () => async (dispatch) => {
     const data = await response.data;
     const rocket = [];
 
-    Object.entries(data).forEach((el) => {
+    data.forEach((el) => {
       rocket.push({
-        id: el[1].id,
-        images: el[1].flickr_images[1],
-        rocketName: el[1].rocket_name,
-        description: el[1].description,
+        id: el.id,
+        images: el.flickr_images[1],
+        rocketName: el.rocket_name,
+        description: el.description,
         reserved: false,
       });
     });
