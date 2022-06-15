@@ -1,5 +1,6 @@
 const FETCH_DRAGON = 'spaceTraveler/dragon/FETCH_DRAGON';
 const RESERVE_DRAGON = 'spaceTraveler/dragon/RESERVE_DRAGON';
+const CANCEL_RESERVE = 'spaceTraveler/dragon/CANCEL_DRAGON';
 const url = 'https://api.spacexdata.com/v3/dragons';
 const initialState = [];
 
@@ -33,6 +34,11 @@ export const reserveDragon = (id) => ({
   payload: id,
 });
 
+export const cancelReserve = (id) => ({
+  type: CANCEL_RESERVE,
+  payload: id,
+});
+
 const dragonReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_DRAGON:
@@ -49,6 +55,16 @@ const dragonReducer = (state = initialState, action) => {
         return dragon;
       });
 
+    case CANCEL_RESERVE:
+      return state.map((dragon) => {
+        if (dragon.id === action.payload) {
+          return {
+            ...dragon,
+            reserved: false,
+          };
+        }
+        return dragon;
+      });
     default:
       return state;
   }
