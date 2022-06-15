@@ -14,12 +14,15 @@
 
 .image {
   width: 15rem;
-  border: 2px solid black;
+  height: 10rem;
+}
+
+.image img {
+  width: 100%;
 }
 
 .body {
   flex: 30rem;
-  border: 2px solid black;
 }
 
 .title {
@@ -36,5 +39,5 @@
 }
 
 .btnReserveRocket {
-  padding: 1rem;
+  padding: 0.7rem;
 }
