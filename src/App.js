@@ -10,6 +10,7 @@ import { FetchMessions, SetMissions } from './Redux/Missions/Missions';
 import Rocket from './Components/Rockets/Rocket';
 import DragonPage from './Components/Dragon/Dragon';
 import { fetchDragon } from './Redux/Dragon/dragon';
+import Profile from './Components/Profile/Profile';
 
 function App() {
   const dispatch = useDispatch();
@@ -31,7 +32,7 @@ function App() {
           <Route path="/" element={<Missions />} />
           <Route path="/Dragons" element={<DragonPage />} />
           <Route path="/Rockets" element={<Rocket />} />
-          <Route path="/Profile" element={<>Profile</>} />
+          <Route path="/Profile" element={<Profile />} />
         </Routes>
       </div>
     </>
