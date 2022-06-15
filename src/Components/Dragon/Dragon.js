@@ -1,20 +1,25 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { generate } from 'randomized-string';
+// import PropTypes from 'prop-types';
+// import { generate } from 'randomized-string';
+import { useDispatch, useSelector } from 'react-redux';
+import { reserveDragon } from '../../Redux/Dragon/dragon';
 import './dragon.css';
 
 const DragonPage = () => {
-  const dragonDetail = useSelector((state) => state.dragonReducer);
+  const dispatch = useDispatch();
+  const reserve = (id) => {
+    dispatch(reserveDragon(id));
+  };
+
+  const dragonsList = useSelector((state) => { state.dragonReducer; });
   return (
     <div>
-      {dragonDetail.map((dragonDetail) => (
+      {dragonsList.map((dragonDetail) => (
         <div key={dragonDetail.id} className="dragonPage">
-          <h3>{dragonDetail.name}</h3>
-          <p>{dragonDetail.type}</p>
-          <div className="dragon">
-            {dragonDetail.flickr_images.map((images) => (<img alt="dragonImg" key={generate()} src={images} />))}
-            <button type="button">reserve dragon</button>
-            <button type="button">cancel reservation </button>
+          <div className="dragon"><img src={dragonDetail.flickr_images} alt="dragon" /></div>
+          <div className="dragonContent">
+            <h3>{dragonDetail.name}</h3>
+            <button className="reserve-btn" onClick={() => reserve(dragonDetail.id)} type="button">Reserve dragon</button>
           </div>
         </div>
       ))}

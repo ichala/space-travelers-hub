@@ -9,7 +9,7 @@ import Missions from './Components/Missions/Missions';
 import { FetchMessions, SetMissions } from './Redux/Missions/Missions';
 import Rocket from './Components/Rockets/Rocket';
 import DragonPage from './Components/Dragon/Dragon';
-import { fetchDragon } from './Redux/Dragon/dragon';
+// import { fetchDragon } from './Redux/Dragon/dragon';
 
 function App() {
   const dispatch = useDispatch();
@@ -17,7 +17,7 @@ function App() {
     async function intitData() {
       const missions = await FetchMessions();
       dispatch(SetMissions(missions));
-      dispatch(fetchDragon());
+      // dispatch(fetchDragon());
     }
     intitData();
   }, []);
