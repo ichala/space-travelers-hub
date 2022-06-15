@@ -6,12 +6,13 @@ import { reserveDragon } from '../../Redux/Dragon/dragon';
 import './dragon.css';
 
 const DragonPage = () => {
+  const dragonsList = useSelector((state) => state.dragonReducer);
+
   const dispatch = useDispatch();
   const reserve = (id) => {
     dispatch(reserveDragon(id));
   };
 
-  const dragonsList = useSelector((state) => { state.dragonReducer; });
   return (
     <div>
       {dragonsList.map((dragonDetail) => (
