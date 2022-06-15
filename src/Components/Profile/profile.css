@@ -4,3 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+.profile-title {
+  margin: 10px;
+}
