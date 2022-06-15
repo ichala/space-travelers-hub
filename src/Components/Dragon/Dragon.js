@@ -19,7 +19,7 @@ const DragonPage = () => {
     <div>
       {dragonsList.map((dragonDetail) => (
         <div key={dragonDetail.id} className="dragonPage">
-          <div className="dragon"><img src={dragonDetail.flickr_images} alt="dragon" /></div>
+          <img src={dragonDetail.flickr_images} alt="dragon" className="dragon" />
           <div cnlassName="dragonContent">
             <h3>{dragonDetail.name}</h3>
             {!dragonDetail.reserved && (<button className="reserve-btn" onClick={() => reserve(dragonDetail.id)} type="button">reserve dragon</button>)}
