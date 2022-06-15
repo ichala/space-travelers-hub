@@ -48,6 +48,7 @@ const dragonReducer = (state = initialState, action) => {
         }
         return dragon;
       });
+
     default:
       return state;
   }
