@@ -14,13 +14,14 @@ export const fetchDragon = () => async (dispatch) => {
   const detail = await Dragondetail();
   const detailList = detail.map((value) => {
     const {
-      id, name, type,
+      id, name, description,
     } = value;
     return {
       id,
       name,
-      type,
-      flickr_images: value.flickr_images,
+      description,
+      flickr_images: value.flickr_images[0],
+      reserved: false,
     };
   });
   dispatch({
