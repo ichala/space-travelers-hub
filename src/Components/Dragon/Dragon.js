@@ -12,7 +12,7 @@ const DragonPage = () => {
   const reserve = (id) => {
     dispatch(reserveDragon(id));
   };
-  console.log(reserveDragon());
+
   return (
     <div>
       {dragonsList.map((dragonDetail) => (

@@ -6,11 +6,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
-<<<<<<< HEAD
-    "prop-types": "^15.8.1",
-=======
     "axios": "^0.27.2",
->>>>>>> 7407cdba18b58ee3882fe8f53a89d844e97e4a8e
     "randomized-string": "^1.2.6",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
