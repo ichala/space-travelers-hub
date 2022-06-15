@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test of Profile Components Profile Components Renders correctly 1`] = `
+<div
+  className="profile-content"
+>
+  <div
+    className="profile-missions"
+  >
+    <h2
+      className="profile-title"
+    >
+      My Missions
+    </h2>
+    <div
+      className="mission-list"
+    >
+      <table
+        className="zebra"
+      >
+        <thead>
+          <tr>
+            <th
+              className="table-title"
+            >
+              Missions
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              className="table-title"
+            >
+              No missions available ..
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    className="profile-dragons"
+  >
+    2
+  </div>
+  <div
+    className="profile-rockets"
+  >
+    3
+  </div>
+</div>
+`;
