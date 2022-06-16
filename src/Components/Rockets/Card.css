@@ -26,18 +26,46 @@
 }
 
 .title {
-  padding-bottom: 1rem;
+  font-weight: bold;
 }
 
 .text {
-  padding-bottom: 1rem;
-  word-spacing: 0.1rem;
+  padding: 0.7rem 0;
+}
+
+.text p {
+  text-align: justify;
+}
+
+.reservation-badge {
+  padding: 0.4rem;
+  margin-right: 0.3rem;
+  height: auto;
+  font-size: 0.8rem;
+  background: #18a2b8;
+  color: white;
+  border-radius: 0.4rem;
+  float: left;
 }
 
 .buttonDiv {
   padding-bottom: 1rem;
 }
 
-.btnReserveRocket {
-  padding: 0.7rem;
+.btnRocket {
+  padding: 0.5rem;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.cancelRocket {
+  background: white;
+  color: #8c8c90;
+  border: 1px solid #50545a;
+}
+
+.reserveRocket {
+  background: #007bff;
+  border: none;
 }
