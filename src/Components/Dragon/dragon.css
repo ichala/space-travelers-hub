@@ -7,7 +7,6 @@
   display: flex;
   margin: 30px auto 0 auto;
   width: 80%;
-  flex-direction: row-reverse;
 }
 
 .dragonContent {
