@@ -4,6 +4,8 @@
 
 > Microverse Group Project : Development of the Space Travelers Hub app using ReactJs and Redux 
 
+![fg](https://user-images.githubusercontent.com/89282221/174147773-4a8a3f37-eaa1-48f5-b265-ecc798a861f0.png)
+
 
 ## Built With
 
