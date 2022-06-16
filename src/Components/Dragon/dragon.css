@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.dragonPage {
+  display: flex;
+  margin: 30px auto 0;
+  width: 80%;
+}
+
+.dragonContent {
+  height: 200px;
+  overflow-y: auto;
+  margin-left: 20px;
+}
+
+.dragon img {
+  width: 230px;
+  height: 200px;
+}
+
+.dragonPage button {
+  margin-top: 20px;
+  padding: 8px 5px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.dragonPage p {
+  margin-top: 20px;
+}
+
+.dragonPage p .dragonBadge {
+  background-color: #18a2b8;
+  margin-right: 10px;
+  font-size: 14px;
+  padding: 3.5px 5px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.dragonPage button.reserve-btn {
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 1.5%;
+}
+
+.dragonPage button.cancel-btn {
+  border: 1px solid #007bff;
+  background-color: transparent;
+  color: #000;
+  padding: 1%;
+}
