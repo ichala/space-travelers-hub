@@ -11,7 +11,7 @@ exports[`Header Components Renders correctly 1`] = `
       src="logo.png"
     />
     <h4>
-      Title
+      Space Travelers Hub
     </h4>
   </div>
   <div

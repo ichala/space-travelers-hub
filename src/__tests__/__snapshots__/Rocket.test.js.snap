@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test of Profile Components Profile Components Renders correctly 1`] = `
+<table
+  className="zebra"
+>
+  <thead>
+    <tr>
+      <th
+        className="table-title"
+      >
+        Rockets
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td
+        className="table-title"
+      >
+        No missions available ..
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

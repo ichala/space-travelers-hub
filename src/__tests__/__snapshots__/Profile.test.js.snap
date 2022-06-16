@@ -42,12 +42,65 @@ exports[`Test of Profile Components Profile Components Renders correctly 1`] = `
   <div
     className="profile-dragons"
   >
-    2
+    <h2
+      className="profile-title"
+    >
+      My Dragons
+    </h2>
+     
+    <table
+      className="zebra"
+    >
+      <thead>
+        <tr>
+          <th
+            className="table-title"
+          >
+            Missions
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            className="table-title"
+          >
+            No Dragons Reserved...
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
   <div
     className="profile-rockets"
   >
-    3
+    <h2
+      className="profile-title"
+    >
+      My Rockets
+    </h2>
+    <table
+      className="zebra"
+    >
+      <thead>
+        <tr>
+          <th
+            className="table-title"
+          >
+            Rockets
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            className="table-title"
+          >
+            No missions available ..
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 `;

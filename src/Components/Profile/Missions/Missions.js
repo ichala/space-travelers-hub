@@ -18,11 +18,11 @@ function Missions() {
         </tr>
         )}
         {filteredMissions.map((mission) => (
-          <>
+          <div key={mission.name}>
             <tr>
               <td className="table-title">{mission.name}</td>
             </tr>
-          </>
+          </div>
         ))}
       </tbody>
     </table>

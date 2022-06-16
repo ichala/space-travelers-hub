@@ -11,11 +11,17 @@ function Profile() {
         <h2 className="profile-title">My Missions</h2>
         <div className="mission-list">
           <Missions />
-          <DragonsProfile />
         </div>
       </div>
-      <div className="profile-dragons">2</div>
-      <div className="profile-rockets"><RocketProfile /></div>
+      <div className="profile-dragons">
+        <h2 className="profile-title">My Dragons</h2>
+        {' '}
+        <DragonsProfile />
+      </div>
+      <div className="profile-rockets">
+        <h2 className="profile-title">My Rockets</h2>
+        <RocketProfile />
+      </div>
     </div>
   );
 }
