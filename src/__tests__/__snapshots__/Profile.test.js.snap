@@ -56,7 +56,7 @@ exports[`Test of Profile Components Profile Components Renders correctly 1`] = `
           <th
             className="table-title"
           >
-            Missions
+            Dragons
           </th>
         </tr>
       </thead>
